@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annalisa Gatto — Psicologa e Psicoterapeuta</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="loading">
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+
+    <!-- Fullscreen Menu -->
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-bg"></div>
+        <div class="menu-content">
+            <nav class="nav-large">
+                <a href="#home" class="menu-link" data-text="Home">Home</a>
+                <a href="#about" class="menu-link" data-text="Chi Sono">Chi Sono</a>
+                <a href="#approccio" class="menu-link" data-text="Aree di cura">Aree di cura</a>
+                <a href="#contatti" class="menu-link" data-text="Contatti">Contatti</a>
+            </nav>
+            <div class="menu-info">
+                <p>Studio Privato — Milano</p>
+                <a href="mailto:psicologannalisagatto@gmail.com" class="hover-scale">psicologannalisagatto@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">A.G.</div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Apri menu">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+        </button>
+    </header>
+
+    <!-- Main Content Flow -->
+    <main class="smooth-scroll-wrapper">
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-typography parallax-layer" data-speed="0.2">
+                <h1 class="hero-title">
+                    <span class="line-reveal"><span class="inner">Spazio</span></span>
+                    <span class="line-reveal"><span class="inner italic offset">d'ascolto.</span></span>
+                </h1>
+            </div>
+            <div class="hero-intro reveal-fade">
+                <p>Psicologa clinica e Psicoterapeuta a Milano.</p>
+                <p>Un luogo sicuro per la crescita di bambini, adolescenti e famiglie.</p>
+            </div>
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scorri dolcemente</span>
+                <span class="scroll-line"></span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="about-grid">
+                <div class="about-img-container reveal-img">
+                    <img src="Annalisa.jpg" alt="Ritratto Annalisa Gatto" class="parallax-layer about-photo"
+                        data-speed="-0.1">
+                    <div class="img-badge hover-scale">PSIBA</div>
+                </div>
+                <div class="about-content">
+                    <h2 class="section-heading">
+                        <span class="line-reveal"><span class="inner">La mia</span></span>
+                        <span class="line-reveal"><span class="inner italic offset-small">Storia.</span></span>
+                    </h2>
+                    <div class="about-text-body reveal-fade">
+                        <p>Sono la <span class="highlight">Dott.ssa Annalisa Gatto</span>, psicologa clinica laureata
+                            con lode alla Bicocca di Milano e psicoterapeuta psicoanalitica specializzata allo PSIBA.
+                        </p>
+                        <p>Il mio obiettivo è accompagnare l'individuo nelle diverse fatiche evolutive. Lavoro
+                            attraverso un approccio empatico e radicato nel rigore scientifico, dedicandomi all'intero
+                            ciclo di vita familiare.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Approach Section -->
+        <section id="approccio" class="approach">
+            <h2 class="huge-background-text parallax-layer" data-speed="0.1">Aree di cura</h2>
+            <div class="approach-list">
+                <div class="approach-item reveal-fade">
+                    <div class="approach-number">01</div>
+                    <div class="approach-details">
+                        <h3>Età Evolutiva</h3>
+                        <p>Supporto mirato per bambini e adolescenti durante le turbolenze e le scoperte della crescita
+                            clinica e psicologica.</p>
+                    </div>
+                </div>
+                <div class="approach-item reveal-fade">
+                    <div class="approach-number">02</div>
+                    <div class="approach-details">
+                        <h3>Valutazione DSA</h3>
+                        <p>Diagnosi accurata e valutazione mirata per Disturbi Specifici dell'Apprendimento. Equipe
+                            multidisciplinare accreditata.</p>
+                    </div>
+                </div>
+                <div class="approach-item reveal-fade">
+                    <div class="approach-number">03</div>
+                    <div class="approach-details">
+                        <h3>Genitorialità e Adulti</h3>
+                        <p>Sostegno alle coppie e ai genitori per esplorare risorse e riscoprire un sano equilibrio
+                            nelle dinamiche familiari.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contatti" class="contact">
+            <div class="contact-box reveal-fade">
+                <h2 class="contact-title">Iniziamo<br>il <em>dialogo.</em></h2>
+
+                <form id="contactForm" class="elegant-form">
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <div class="input-row">
+                        <input type="text" name="name" id="name" required placeholder=" ">
+                        <label for="name">Il tuo nome</label>
+                    </div>
+
+                    <div class="input-row">
+                        <input type="email" name="email" id="email" required placeholder=" ">
+                        <label for="email">La tua email</label>
+                    </div>
+
+                    <div class="input-row">
+                        <textarea name="message" id="message" rows="1" required placeholder=" "></textarea>
+                        <label for="message">Il tuo messaggio</label>
+                    </div>
+
+                    <div class="form-footer">
+                        <button type="submit" id="submitButton" class="magnetic-btn">
+                            <span class="btn-text">Invia il messaggio</span>
+                        </button>
+                        <p id="formResult" class="form-result"></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Annalisa Gatto. — Milano.</p>
+                <div class="social-links-footer">
+                    <a href="#" class="hover-scale">Instagram</a>
+                    <a href="#" class="hover-scale">Facebook</a>
+                    <a href="#" class="hover-scale">TikTok</a>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Editorial WhatsApp Link -->
+    <a href="https://wa.me/390000000000" class="whatsapp-editorial hover-scale" aria-label="WhatsApp" target="_blank"
+        rel="noopener noreferrer">
+        W.
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
